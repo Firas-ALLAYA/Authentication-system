@@ -47,10 +47,10 @@ This project is a **secure authentication system** implemented in C++. It allows
   Follow the installation instructions for your operating system: Libsodium Installation Guide.
 
 4. **Compile the Project**:
-   Use a C++ compiler to compile the project: g++ -std=c++11 -o auth_system main.cpp -lsodium
+   Use a C++ compiler to compile the project: g++ -std=c++11 -o final.cpp -lsodium
 
 5. **Run the Program**:
-   Execute the compiled binary:./auth_system
+   Execute the compiled binary:./final
    
 ---
 
