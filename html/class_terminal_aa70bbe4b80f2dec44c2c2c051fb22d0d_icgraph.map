@@ -1,0 +1,7 @@
+<map id="Terminal::loading" name="Terminal::loading">
+<area shape="rect" id="Node000001" title="Displays a loading message with dots, simulating a loading process." alt="" coords="536,5,655,32"/>
+<area shape="rect" id="Node000002" href="$class_password_hasher.html#a9d5f5a3f7f6b4f030350d7dfd6107104" title="Hashes the password using the given salt." alt="" coords="273,5,488,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,21,488,21,488,16,520,16"/>
+<area shape="rect" id="Node000003" href="$class_password_hasher.html#a4da521a7955253b70f0527b0cd156604" title="Verifies if the given password matches the stored hash." alt="" coords="5,5,225,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="257,21,225,21,225,16,257,16"/>
+</map>

@@ -1,0 +1,112 @@
+\doxysection{User Class Reference}
+\hypertarget{class_user}{}\label{class_user}\index{User@{User}}
+
+
+Represents a user with username and password, and handles password validation and account creation.  
+
+
+
+
+Collaboration diagram for User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_user__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_user_a4a0137053e591fbb79d9057dd7d2283d}\label{class_user_a4a0137053e591fbb79d9057dd7d2283d} 
+{\bfseries User} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: Initializes the strength\+Checker with an instance of \doxylink{class_standard_password_checker}{Standard\+Password\+Checker}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_a844c8e27ff2de8c49cf0253219180935}{set\+Password}} (const string \&pw)
+\begin{DoxyCompactList}\small\item\em Sets the password after checking its strength. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_af6ade89bd4c60a522b7d884206bac15a}{set\+Username}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Sets the username. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_a82e034043e04b2d750c654c8b2f2ce78}{get\+Username}} () const
+\begin{DoxyCompactList}\small\item\em Gets the username. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_user_a33429bdd1253091697a9c5c5e1448bee}{get\+Password}} () const
+\begin{DoxyCompactList}\small\item\em Gets the password. \end{DoxyCompactList}\item 
+\Hypertarget{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}\label{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+User} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: Deletes the strength\+Checker object to free up memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a user with username and password, and handles password validation and account creation. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_user_a33429bdd1253091697a9c5c5e1448bee}\index{User@{User}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily \label{class_user_a33429bdd1253091697a9c5c5e1448bee} 
+string User\+::get\+Password (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the password. 
+
+\begin{DoxyReturn}{Returns}
+The password. 
+\end{DoxyReturn}
+\Hypertarget{class_user_a82e034043e04b2d750c654c8b2f2ce78}\index{User@{User}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getUsername()}{getUsername()}}
+{\footnotesize\ttfamily \label{class_user_a82e034043e04b2d750c654c8b2f2ce78} 
+string User\+::get\+Username (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the username. 
+
+\begin{DoxyReturn}{Returns}
+The username. 
+\end{DoxyReturn}
+\Hypertarget{class_user_a844c8e27ff2de8c49cf0253219180935}\index{User@{User}!setPassword@{setPassword}}
+\index{setPassword@{setPassword}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setPassword()}{setPassword()}}
+{\footnotesize\ttfamily \label{class_user_a844c8e27ff2de8c49cf0253219180935} 
+bool User\+::set\+Password (\begin{DoxyParamCaption}\item[{const string \&}]{pw}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the password after checking its strength. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pw} & The password to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the password is valid and set successfully, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_user_a844c8e27ff2de8c49cf0253219180935_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_user_af6ade89bd4c60a522b7d884206bac15a}\index{User@{User}!setUsername@{setUsername}}
+\index{setUsername@{setUsername}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setUsername()}{setUsername()}}
+{\footnotesize\ttfamily \label{class_user_af6ade89bd4c60a522b7d884206bac15a} 
+void User\+::set\+Username (\begin{DoxyParamCaption}\item[{const string \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The username to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+final.\+cpp\end{DoxyCompactItemize}

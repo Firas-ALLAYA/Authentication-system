@@ -1,0 +1,7 @@
+<map id="Database::addUser" name="Database::addUser">
+<area shape="rect" id="Node000001" title="Adds a new user to the &#39;users&#39; map with the provided credentials." alt="" coords="5,31,140,57"/>
+<area shape="rect" id="Node000002" href="$class_database.html#ab6edce446da115ab459b7ed68c3fb87b" title="Saves the current users data from the &#39;users&#39; map to the file." alt="" coords="188,5,336,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,32,172,28,173,33,141,38"/>
+<area shape="rect" id="Node000003" href="$class_database.html#a0d8a42628ccb41f20ad7c36327ceb819" title="Checks if a user exists in the &#39;users&#39; map." alt="" coords="188,56,336,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,50,173,55,173,60,140,56"/>
+</map>

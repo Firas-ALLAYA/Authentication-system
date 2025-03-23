@@ -1,0 +1,5 @@
+<map id="Database::userExists" name="Database::userExists">
+<area shape="rect" id="Node000001" title="Checks if a user exists in the &#39;users&#39; map." alt="" coords="188,5,335,32"/>
+<area shape="rect" id="Node000002" href="$class_database.html#ac3d3e12822acd664bda805b28c5ee4e7" title="Adds a new user to the &#39;users&#39; map with the provided credentials." alt="" coords="5,5,140,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,21,140,21,140,16,172,16"/>
+</map>

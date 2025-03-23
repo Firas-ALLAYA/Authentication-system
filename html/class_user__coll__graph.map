@@ -1,0 +1,3 @@
+<map id="User" name="User">
+<area shape="rect" id="Node000001" title="Represents a user with username and password, and handles password validation and account creation." alt="" coords="5,5,115,181"/>
+</map>

@@ -1,0 +1,208 @@
+\doxysection{Terminal Class Reference}
+\hypertarget{class_terminal}{}\label{class_terminal}\index{Terminal@{Terminal}}
+
+
+Provides static methods to interact with the terminal.  
+
+
+
+
+Collaboration diagram for Terminal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_terminal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_terminal_a5911c5f8dd6817228247460594ecb0e2}\label{class_terminal_a5911c5f8dd6817228247460594ecb0e2} 
+static void {\bfseries clear\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Clears the terminal screen. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terminal_a945e2f00d3dd825b7234db2d4baf9241}{print\+Header}} (const string \&title)
+\begin{DoxyCompactList}\small\item\em Prints a header with the title centered and surrounded by a border. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terminal_a668ae5a88e44129328e68b9f5211eea3}{print\+Success}} (const string \&message)
+\begin{DoxyCompactList}\small\item\em Prints a success message in green. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terminal_a30cddc8725137449007a6ced6cc6becd}{print\+Error}} (const string \&message)
+\begin{DoxyCompactList}\small\item\em Prints an error message in red. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terminal_a5ca82e29a694d4cbd6c2704735d28e14}{print\+Warning}} (const string \&message)
+\begin{DoxyCompactList}\small\item\em Prints a warning message in yellow. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terminal_a1ad5b6700f391f13989c17c68544945e}{print\+Info}} (const string \&message)
+\begin{DoxyCompactList}\small\item\em Prints an informational message in cyan. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terminal_a3dd5637f0aca2e181c1bfe37668a0aa9}{print\+Progress\+Bar}} (int progress, int total)
+\begin{DoxyCompactList}\small\item\em Prints a progress bar with the current progress and total steps. \end{DoxyCompactList}\item 
+\Hypertarget{class_terminal_a3f7fb5a559a2bf75f5f20329fd2d6ab2}\label{class_terminal_a3f7fb5a559a2bf75f5f20329fd2d6ab2} 
+static void {\bfseries wait\+For\+Enter} ()
+\begin{DoxyCompactList}\small\item\em Waits for the user to press Enter before continuing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_terminal_aa70bbe4b80f2dec44c2c2c051fb22d0d}{loading}} (const string \&message, int milliseconds=1500)
+\begin{DoxyCompactList}\small\item\em Displays a loading message with dots, simulating a loading process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides static methods to interact with the terminal. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_terminal_aa70bbe4b80f2dec44c2c2c051fb22d0d}\index{Terminal@{Terminal}!loading@{loading}}
+\index{loading@{loading}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{loading()}{loading()}}
+{\footnotesize\ttfamily \label{class_terminal_aa70bbe4b80f2dec44c2c2c051fb22d0d} 
+static void Terminal\+::loading (\begin{DoxyParamCaption}\item[{const string \&}]{message}{, }\item[{int}]{milliseconds}{ = {\ttfamily 1500}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Displays a loading message with dots, simulating a loading process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The loading message to display. \\
+\hline
+{\em milliseconds} & The duration of the loading animation. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terminal_aa70bbe4b80f2dec44c2c2c051fb22d0d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_terminal_a30cddc8725137449007a6ced6cc6becd}\index{Terminal@{Terminal}!printError@{printError}}
+\index{printError@{printError}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{printError()}{printError()}}
+{\footnotesize\ttfamily \label{class_terminal_a30cddc8725137449007a6ced6cc6becd} 
+static void Terminal\+::print\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Prints an error message in red. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The error message to display. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terminal_a30cddc8725137449007a6ced6cc6becd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_terminal_a945e2f00d3dd825b7234db2d4baf9241}\index{Terminal@{Terminal}!printHeader@{printHeader}}
+\index{printHeader@{printHeader}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{printHeader()}{printHeader()}}
+{\footnotesize\ttfamily \label{class_terminal_a945e2f00d3dd825b7234db2d4baf9241} 
+static void Terminal\+::print\+Header (\begin{DoxyParamCaption}\item[{const string \&}]{title}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Prints a header with the title centered and surrounded by a border. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title to display in the header. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_terminal_a945e2f00d3dd825b7234db2d4baf9241_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_terminal_a1ad5b6700f391f13989c17c68544945e}\index{Terminal@{Terminal}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily \label{class_terminal_a1ad5b6700f391f13989c17c68544945e} 
+static void Terminal\+::print\+Info (\begin{DoxyParamCaption}\item[{const string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Prints an informational message in cyan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The informational message to display. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_terminal_a3dd5637f0aca2e181c1bfe37668a0aa9}\index{Terminal@{Terminal}!printProgressBar@{printProgressBar}}
+\index{printProgressBar@{printProgressBar}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{printProgressBar()}{printProgressBar()}}
+{\footnotesize\ttfamily \label{class_terminal_a3dd5637f0aca2e181c1bfe37668a0aa9} 
+static void Terminal\+::print\+Progress\+Bar (\begin{DoxyParamCaption}\item[{int}]{progress}{, }\item[{int}]{total}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Prints a progress bar with the current progress and total steps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em progress} & The current progress. \\
+\hline
+{\em total} & The total steps. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_terminal_a3dd5637f0aca2e181c1bfe37668a0aa9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_terminal_a668ae5a88e44129328e68b9f5211eea3}\index{Terminal@{Terminal}!printSuccess@{printSuccess}}
+\index{printSuccess@{printSuccess}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{printSuccess()}{printSuccess()}}
+{\footnotesize\ttfamily \label{class_terminal_a668ae5a88e44129328e68b9f5211eea3} 
+static void Terminal\+::print\+Success (\begin{DoxyParamCaption}\item[{const string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Prints a success message in green. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The success message to display. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_terminal_a668ae5a88e44129328e68b9f5211eea3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_terminal_a5ca82e29a694d4cbd6c2704735d28e14}\index{Terminal@{Terminal}!printWarning@{printWarning}}
+\index{printWarning@{printWarning}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{printWarning()}{printWarning()}}
+{\footnotesize\ttfamily \label{class_terminal_a5ca82e29a694d4cbd6c2704735d28e14} 
+static void Terminal\+::print\+Warning (\begin{DoxyParamCaption}\item[{const string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Prints a warning message in yellow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The warning message to display. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_terminal_a5ca82e29a694d4cbd6c2704735d28e14_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+final.\+cpp\end{DoxyCompactItemize}

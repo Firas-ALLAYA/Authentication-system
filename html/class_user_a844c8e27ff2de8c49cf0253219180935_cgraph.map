@@ -1,0 +1,11 @@
+<map id="User::setPassword" name="User::setPassword">
+<area shape="rect" id="Node000001" title="Sets the password after checking its strength." alt="" coords="5,81,139,108"/>
+<area shape="rect" id="Node000002" href="$class_terminal.html#a30cddc8725137449007a6ced6cc6becd" title="Prints an error message in red." alt="" coords="209,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,78,186,42,206,34,208,39,188,46,102,83"/>
+<area shape="rect" id="Node000003" href="$class_terminal.html#a3dd5637f0aca2e181c1bfe37668a0aa9" title="Prints a progress bar with the current progress and total steps." alt="" coords="187,56,362,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,84,171,80,171,85,140,89"/>
+<area shape="rect" id="Node000004" href="$class_terminal.html#a668ae5a88e44129328e68b9f5211eea3" title="Prints a success message in green." alt="" coords="197,107,352,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,100,182,106,182,111,139,106"/>
+<area shape="rect" id="Node000005" href="$class_terminal.html#a5ca82e29a694d4cbd6c2704735d28e14" title="Prints a warning message in yellow." alt="" coords="199,157,350,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="102,106,188,143,208,150,206,155,186,148,100,111"/>
+</map>

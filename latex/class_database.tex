@@ -1,0 +1,136 @@
+\doxysection{Database Class Reference}
+\hypertarget{class_database}{}\label{class_database}\index{Database@{Database}}
+
+
+Provides static methods to interact with a database of users.  
+
+
+
+
+Collaboration diagram for Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_database__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_database_a5713f0c2ee62778e3de6ce38c3ef03d5}\label{class_database_a5713f0c2ee62778e3de6ce38c3ef03d5} 
+static void {\bfseries load\+Users} ()
+\begin{DoxyCompactList}\small\item\em Loads user data from a file into the \textquotesingle{}users\textquotesingle{} map. \end{DoxyCompactList}\item 
+\Hypertarget{class_database_ab6edce446da115ab459b7ed68c3fb87b}\label{class_database_ab6edce446da115ab459b7ed68c3fb87b} 
+static void {\bfseries save\+Users} ()
+\begin{DoxyCompactList}\small\item\em Saves the current users data from the \textquotesingle{}users\textquotesingle{} map to the file. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_database_a0d8a42628ccb41f20ad7c36327ceb819}{user\+Exists}} (const string \&username)
+\begin{DoxyCompactList}\small\item\em Checks if a user exists in the \textquotesingle{}users\textquotesingle{} map. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_database_ac3d3e12822acd664bda805b28c5ee4e7}{add\+User}} (const string \&username, const string \&hash, const string \&salt)
+\begin{DoxyCompactList}\small\item\em Adds a new user to the \textquotesingle{}users\textquotesingle{} map with the provided credentials. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_database_a934e7dd92fe9be144267666faadf7819}{get\+Credentials}} (const string \&username, string \&hash, string \&salt)
+\begin{DoxyCompactList}\small\item\em Retrieves the hash and salt for a given username. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_database_af7742d02698ee14ff84f6efe11e4447d}{user\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of users in the \textquotesingle{}users\textquotesingle{} map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides static methods to interact with a database of users. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_database_ac3d3e12822acd664bda805b28c5ee4e7}\index{Database@{Database}!addUser@{addUser}}
+\index{addUser@{addUser}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily \label{class_database_ac3d3e12822acd664bda805b28c5ee4e7} 
+static bool Database\+::add\+User (\begin{DoxyParamCaption}\item[{const string \&}]{username}{, }\item[{const string \&}]{hash}{, }\item[{const string \&}]{salt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Adds a new user to the \textquotesingle{}users\textquotesingle{} map with the provided credentials. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the new user. \\
+\hline
+{\em hash} & The hashed password. \\
+\hline
+{\em salt} & The salt used for hashing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the user is added successfully, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_database_ac3d3e12822acd664bda805b28c5ee4e7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_database_a934e7dd92fe9be144267666faadf7819}\index{Database@{Database}!getCredentials@{getCredentials}}
+\index{getCredentials@{getCredentials}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{getCredentials()}{getCredentials()}}
+{\footnotesize\ttfamily \label{class_database_a934e7dd92fe9be144267666faadf7819} 
+static bool Database\+::get\+Credentials (\begin{DoxyParamCaption}\item[{const string \&}]{username}{, }\item[{string \&}]{hash}{, }\item[{string \&}]{salt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Retrieves the hash and salt for a given username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username to retrieve credentials for. \\
+\hline
+{\em hash} & The hash to store. \\
+\hline
+{\em salt} & The salt to store. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if credentials are found, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_database_af7742d02698ee14ff84f6efe11e4447d}\index{Database@{Database}!userCount@{userCount}}
+\index{userCount@{userCount}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{userCount()}{userCount()}}
+{\footnotesize\ttfamily \label{class_database_af7742d02698ee14ff84f6efe11e4447d} 
+static int Database\+::user\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the number of users in the \textquotesingle{}users\textquotesingle{} map. 
+
+\begin{DoxyReturn}{Returns}
+The number of users. 
+\end{DoxyReturn}
+\Hypertarget{class_database_a0d8a42628ccb41f20ad7c36327ceb819}\index{Database@{Database}!userExists@{userExists}}
+\index{userExists@{userExists}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{userExists()}{userExists()}}
+{\footnotesize\ttfamily \label{class_database_a0d8a42628ccb41f20ad7c36327ceb819} 
+static bool Database\+::user\+Exists (\begin{DoxyParamCaption}\item[{const string \&}]{username}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Checks if a user exists in the \textquotesingle{}users\textquotesingle{} map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the user exists, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_database_a0d8a42628ccb41f20ad7c36327ceb819_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+final.\+cpp\end{DoxyCompactItemize}
