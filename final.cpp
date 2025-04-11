@@ -4,7 +4,7 @@
  * @details This file contains the implementation of a secure authentication system
  *          that allows users to register, log in, and manage their accounts.
  */
-fff
+
  #include <iostream>
  #include <string>
  #include <cctype>
