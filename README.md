@@ -93,9 +93,7 @@ This project is a **secure authentication system** implemented in C++. It allows
 
 **Libsodium**: For cryptographic operations (password hashing with Argon2).
 
-**Doxygen**: For generating documentation and diagrams.
-
-**Graphviz**: For rendering diagrams in Doxygen.
+.
 
 
 
